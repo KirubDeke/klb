@@ -1,0 +1,124 @@
+/* src/Styles/FooterStyle.css */
+.footer {
+  background-color: #f9f9f9;
+  padding: 50px 20px; 
+  text-align: left;
+  border-top: 1px solid #ddd;
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start below */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.footer.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.footer-logo {
+  margin-right: 20px; 
+  padding: 40px;
+}
+
+.footer-details {
+  flex: 1;
+  min-width: 200px; 
+}
+
+.footer-details p {
+  margin: 5px 0;
+}
+
+.footer-details span {
+  opacity: 0.5;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  margin-right: 15%;
+}
+
+.footer-links-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; 
+  min-width: 150px; 
+  text-decoration: none;
+}
+
+.footer-links-column a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links-column a:hover {
+  text-decoration: underline;
+  text-decoration-color: #FF8404;
+}
+
+.footer-links-column p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.footer-bottom p {
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .footer-links {
+      justify-content: flex-start; 
+      margin: 10px 0; 
+  }
+
+  .footer-links-column {
+      margin-left: 0; 
+      margin-top: 10px; 
+  }
+
+  .footer-social {
+      justify-content: flex-start; 
+      margin-top: 10px; 
+  }
+
+  .footer-bottom {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .footer-logo {
+      padding: 0%;
+  }
+}

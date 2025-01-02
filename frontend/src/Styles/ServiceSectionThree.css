@@ -1,0 +1,113 @@
+.why-choose-us {
+  padding: 40px;
+  background-color: #FFFFFF;
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+.why-choose-us h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 2px solid #FF8404;
+  display: inline;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.ServiceSectionContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.ServiceSectioItem {
+  background-color: #585757;
+  color: #fff;
+  padding: 20px;
+  flex: 1;
+  max-width: 30%;
+  margin: 5% 3%;
+  min-width: 250px; 
+}
+
+.ServiceSectioItem h3 {
+  font-size: 3rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.ServiceSectioItem h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.ServiceSectioItem p {
+  font-size: 1rem;
+  opacity: 60%;
+  font-weight: 400;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicator span {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.indicator .active {
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .why-choose-us {
+      margin-left: 5%; 
+      margin-right: 5%;
+  }
+
+  .ServiceSectionContent {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .ServiceSectioItem {
+      max-width: 90%; 
+      margin: 10px 0; 
+  }
+
+  .why-choose-us h2 {
+      font-size: 30px; 
+  }
+
+  .indicator {
+      flex-wrap: wrap; 
+  }
+
+  .indicator span {
+      font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .ServiceSectioItem h3 {
+      font-size: 2.5rem; 
+  }
+
+  .ServiceSectioItem h4 {
+      font-size: 1.2rem;
+  }
+
+  .ServiceSectioItem p {
+      font-size: 0.9rem; 
+  }
+}

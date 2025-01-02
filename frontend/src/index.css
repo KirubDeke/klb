@@ -1,0 +1,13 @@
+.horizontalLine {
+    width: 20%;                  
+    height: 2px;                  
+    background-color: #FF8A04;       
+    margin: 20px 0;  
+    text-align: center;            
+}
+.btn{
+    width: 233px;
+    height: 49px;
+    border: 1px solid #FF8A04;
+    background-color: white;
+}

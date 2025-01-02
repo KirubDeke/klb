@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.HomeSection {
+    display: flex;
+    flex-direction: column; 
+}
+
+.HomeContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding: 40px 15px 5px 15px; 
+    margin-left: 4%;
+    margin-top: 7%;
+    opacity: 0; 
+    transform: translateY(20px);  
+    animation: fadeInUp 1.8s forwards;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headingOne {
+    margin: 7% 0 5%;
+    font-size: 40px;
+}
+
+.subHeading {
+    margin: 0 0 5%;
+}
+
+.btn {
+    text-align: center;
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #FFFFFF; 
+    color: black; 
+    text-decoration: none; 
+    border: 1px solid #FF8404;
+    cursor: pointer; 
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #FF8404;
+    color: #FFFFFF;
+    scale: 1.05;
+  }
+
+.downwardArrow {
+    margin: 0 0 5%;
+    font-size: 50px;
+    color: #FF8A04;
+}
+
+.HomeImage {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden;
+}
+
+.HomeImage img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .HomeSection {
+        flex-direction: row;
+    }
+
+    .HomeContent {
+        width: 40%; 
+    }
+
+    .HomeImage {
+        width: 60%; 
+        height: 100vh; 
+    }
+}

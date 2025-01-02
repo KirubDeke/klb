@@ -1,0 +1,100 @@
+/* src/Styles/AboutLanding.css */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5%;
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start below */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.landing-page.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 7% 0% 2% 7%; 
+  text-align: left;
+}
+
+.hero-text h1 span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1% 0% 2% 0%; 
+  gap: 50px;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.imageSection img {
+  width: 100%; 
+  max-width: 500px; 
+  height: 322px; 
+  border-radius: 5px;
+  object-fit: cover; 
+}
+
+.About-content {
+  display: flex;
+  flex-direction: column;
+  width: 45%; 
+  max-width: 800px; 
+  margin: 5% 0% 5% 7%; 
+}
+
+.About-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.About-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.About-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+      font-size: 30px;
+      margin-top: 25%;
+  }
+
+  .imageSection {
+      flex-direction: column; 
+      gap: 20px; 
+  }
+
+  .About-content {
+      width: 90%; 
+      margin: 2% 0; 
+  }
+
+  .About-content h2 {
+      font-size: 20px; 
+  }
+
+  .About-content h3 {
+      font-size: 20px; 
+  }
+
+  .About-content p {
+      font-size: 0.9rem; 
+  }
+}

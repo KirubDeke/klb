@@ -1,0 +1,98 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 5% 7%; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.small-image {
+  align-self: end;
+  position: relative;
+  transform: translateY(20px);
+  margin-top: 30%;
+  width: 100%;
+}
+
+.large-image {
+  position: relative;
+  width: 100%; 
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100px; 
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0; 
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; 
+    margin-top: 25%!important;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .small-image {
+    transform: translateY(0); 
+    margin-top: 0; 
+  }
+
+  .text-section {
+    margin: 20px 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem; 
+    margin-top: 25%;
+  }
+
+  .subtitle {
+    font-size: 1.2rem; 
+  }
+
+  .description {
+    font-size: 0.9rem; 
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/NavBarStyle.css';
+import '../Styles/NavBarStyle.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
